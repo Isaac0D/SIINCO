@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. INICIALIZACIÓN DE LENIS (Scroll Suave)
     // =========================================================
     const lenis = new Lenis({
-        duration: 1.2,        // Velocidad (más alto = más lento/suave)
+        duration: 0,        // Velocidad (más alto = más lento/suave)
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Curva física
         direction: 'vertical',
         gestureDirection: 'vertical',
-        smooth: true,
+        smooth: false,
         mouseMultiplier: 1,   // Sensibilidad del mouse
         smoothTouch: false,   // Desactivado en móvil (recomendado para rendimiento)
         touchMultiplier: 2,
