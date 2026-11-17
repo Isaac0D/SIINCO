@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | SIINCO</title>
+    <link rel="stylesheet" href="style/estilo.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+    <meta name="theme-color" content="#545F66">
+</head>
+<body>
+
+    <header class="main-header" id="header-placeholder"></header>
+
+    <main class="contact-page-content">
+        <div class="container">
+            
+            <div class="contact-header reveal">
+                <h1 class="page-title">CONTACTO</h1>
+                <p class="intro-text">
+                    Estamos listos para escuchar sobre su próximo proyecto. Póngase en contacto con nosotros a través de cualquiera de nuestros canales.
+                </p>
+            </div>
+
+            <div class="contact-info-grid">
+                
+                <div class="info-card reveal">
+                    <div class="icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h3>Dirección</h3>
+                    <div class="card-body">
+                        <a href="https://maps.google.com/?q=Av.+Abraham+Lincoln+1161,+Juárez,+Chih" target="_blank">
+                            Av. Abraham Lincoln 1161,<br>Juárez, Chih.
+                        </a>
+                        <div class="divider-mini"></div>
+                        <a href="https://maps.google.com/?q=1230+Wyoming+Ave,+El+Paso,+TX" target="_blank">
+                            1230 Wyoming Ave,<br>El Paso, TX 79902, EE. UU
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-card reveal">
+                    <div class="icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <h3>Correo</h3>
+                    <div class="card-body">
+                        <a href="mailto:lastorga@siinconte.com" class="link-highlight">lastorga@siinconte.com</a>
+                    </div>
+                </div>
+
+                <div class="info-card reveal">
+                    <div class="icon-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <h3>Llámenos</h3>
+                    <div class="card-body">
+                        <a href="tel:+526563331610" class="phone-text">+52 (656) 333 1610</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            </div>
+    <div class="form-section reveal">
+                <div class="form-header">
+                    <h2>¿ALGÚN PROYECTO<br>EN MENTE?</h2>
+                    <p>Completa el siguiente formulario y nos pondremos en contacto a la brevedad.</p>
+                </div>
+
+                <form class="contact-form" action="enviar.php" method="POST">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" id="nombre" name="nombre" placeholder=" " required>
+                            <label for="nombre">Nombre*</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" id="telefono" name="telefono" placeholder=" " required>
+                            <label for="telefono">Teléfono*</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Correo Electrónico*</label>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder=" " required></textarea>
+                        <label for="mensaje">Mensaje*</label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div> <section class="map-section reveal">
+            <iframe 
+                src="https://maps.google.com/maps?q=Av.+Abraham+Lincoln+1161,+Ciudad+Juarez&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+    </main>
+
+    <div id="custom-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-icon" id="modal-icon">
+                </div>
+            <h3 id="modal-title">Título</h3>
+            <p id="modal-message">Mensaje</p>
+            <button id="modal-close" class="btn-modal">ACEPTAR</button>
+        </div>
+    </div>
+
+    <footer class="main-footer" id="footer-placeholder"></footer>
+
+    <script src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
